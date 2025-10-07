@@ -1,0 +1,111 @@
+:root {
+  --primary: #2563eb;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: #f9fafc;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+/* الشريط العلوي */
+.navbar {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.navbar-brand {
+  font-weight: 700;
+  transition: transform 0.25s ease;
+}
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+/* زر الترجمة */
+.navbar .btn-light {
+  background: #fff;
+  color: var(--primary);
+  border: 1px solid #e5e7eb;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.navbar .btn-light:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* قسم البطل */
+.hero {
+  background: #eef2ff;
+}
+
+/* البطاقات */
+.card-service {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.25s ease;
+}
+.card-service:hover {
+  transform: translateY(-6px);
+}
+.service-img {
+  height: 160px;
+  object-fit: cover;
+  width: 100%;
+}
+.service-body {
+  padding: 14px;
+}
+.service-price {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.price-old {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 8px;
+}
+
+/* زر المساعدة */
+.help-btn {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background: var(--primary);
+  color: white;
+  border: 0;
+  padding: 14px;
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.help-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.35);
+}
+.speaker-icon {
+  font-size: 20px;
+}
+
+/* المودال */
+.modal-content {
+  direction: rtl;
+  border-radius: 12px;
+}
+
+/* الفوتر */
+footer {
+  border-top: 1px solid #e5e7eb;
+}
+footer small {
+  color: var(--muted);
+}
